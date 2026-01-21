@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
-import crypto from "crypto";
 
-const SECRET_KEY = ""; // same as $key in PHP
+const SECRET_KEY = ""; // same as PHP $key
 
-export function middleware(req) {
+async function md5(message) {
+  const data = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("MD5", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+export async function middleware(req) {
   const url = req.nextUrl;
   const lpkeyua = url.searchParams.get("lpkeyua");
 
@@ -12,7 +18,6 @@ export function middleware(req) {
   }
 
   const [hash, hashTime] = lpkeyua.split(".");
-
   if (!hash || !hashTime) {
     return new NextResponse(null, { status: 403 });
   }
@@ -23,12 +28,10 @@ export function middleware(req) {
 
   const userAgent = req.headers.get("user-agent") || "";
 
-  const generatedHash = crypto
-    .createHash("md5")
-    .update(SECRET_KEY + hashTime + userAgent)
-    .digest("hex");
+  const generatedHash =
+    `${await md5(SECRET_KEY + hashTime + userAgent)}.${hashTime}`;
 
-  if (`${generatedHash}.${hashTime}` !== lpkeyua) {
+  if (generatedHash !== lpkeyua) {
     return new NextResponse(null, { status: 403 });
   }
 

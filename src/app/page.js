@@ -1,155 +1,175 @@
 import Link from "next/link";
-import React from "react";
 
-const PersonalLoanPage = () => {
+export default function PennyPerMiles() {
   return (
-    <div className="text-gray-900 min-h-screen font-sans">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3">
-        
-        {/* Top Note */}
-        <div className="text-center text-[7px] md:text-[14px]  text-red-700 font-semibold mb-2">
-          This page is a paid advertisement and referral service for personal loan options.
-          It is not a government website.
+    <div className="min-h-screen text-slate-900 font-sans">
+      <div className="max-w-4xl mx-auto p-4">
+
+        {/* Top Disclaimer */}
+        <div className="text-center text-[11px] text-red-700 font-semibold">
+          Paid advertisement and referral service for auto insurance options. Not a government website.
         </div>
 
-        {/* Card */}
-        <div className="bg-white rounded-2xl">
-          
-          {/* Heading */}
-          <h1 className="text-center text-lg md:text-3xl font-semibold mb-4 px-2 leading-5 md:leading-normal">
-           <span className="text-red-700">Credit Cards</span>,<span className="text-red-700"> Bills</span>, and <span className="text-red-700">Auto Repairs</span> Are Adding Up — That’s Why Personal<span className="text-red-700"> Loans </span> Are Back in the Conversation Across America in <span className="text-red-700">2026</span>
-          </h1>
+        <div className="bg-white rounded-[14px] overflow-hidden">
 
-          {/* Sub Text */}
-          <p className="text-justify text-[10px] md:text-base text-gray-600 max-w-4xl mx-auto mb-4 px-2">
-            Credit card balances, everyday household bills, and unexpected auto repairs are putting pressure on monthly budgets.
-            As costs continue to rise across the U.S., many people are reviewing personal loan options to see if consolidating
-            or restructuring payments could help them stay on track moving forward.
-          </p>
+          {/* HERO */}
+          <section className="px-4 pb-3 text-center">
+            <h1 className="text-[30px] font-semibold leading-7 mb-3">
+              Auto Insurance Isn’t Getting Cheaper — That’s Why More Drivers Are Taking a Second Look
+            </h1>
+            <p className="text-[15px] text-slate-700 max-w-205 mx-auto">
+              Premium rise quietly, cars sit more than they move, and household costs keep climbing.
+              Many drivers are asking whether their current policy still matches how they actually drive.
+            </p>
+          </section>
 
-          {/* Hero Image */}
-          <div className="border-y border-gray-200 bg-gray-200 rounded overflow-hidden">
+          {/* IMAGE */}
+          <div className="bg-gray-200 border-y border-gray-200">
             <img
-              src="/personal-loan.jpeg"
-              alt="Person reviewing bills and finances at home"
-              className="w-full h-55 sm:h-auto object-cover"
+              src="/car-img.jpeg"
+              alt="Auto insurance review"
+              className="w-full h-full object-cover rounded"
             />
           </div>
 
-          {/* CTA */}
-          <a
-            href="https://h0mlr.ttrk.io/click"
-            className="block w-full sm:max-w-4xl mx-auto my-4 bg-red-600 hover:bg-red-700 text-white text-center py-3 sm:py-4 text-xs md:text-base font-semibold rounded-lg transition"
-          >
-            See Options →
-          </a>
-
-          {/* Section 1 */}
-          <div className="p-3 sm:p-6">
-            <h2 className="text-center text-base md:text-lg font-semibold mb-4">
-              Common Reasons People Explore Personal Loans
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div>
-                <h3 className="text-sm md:text-base font-semibold mb-1">
-                  Credit Cards That Won’t Go Away
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  Carrying balances month after month can feel like running in place.
-                  Many people look at loans as a way to replace revolving debt with a clear payoff plan.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-sm md:text-base font-semibold mb-1">
-                  Too Many Bills, One Paycheck
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  Rent, utilities, insurance, groceries — it adds up fast.
-                  Some borrowers use personal loans to smooth out cash flow instead of falling behind.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-semibold mb-1">
-                  Simplifying Their Finances
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  Managing multiple cards or payments can be stressful.
-                  A personal loan may help consolidate things into one monthly payment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 2 */}
-          <div className="p-4 sm:p-6">
-            <h2 className="text-center text-base md:text-lg font-semibold mb-4">
-              Other Situations Where People Consider a Loan
-            </h2>
-
-            <ul className="max-w-4xl mx-auto text-sm md:text-base list-disc pl-5 space-y-2 text-justify">
-              <li>Covering large planned expenses without draining savings</li>
-              <li>Replacing short-term fixes that are no longer working</li>
-              <li>Getting back on track after falling a little behind</li>
-              <li>Creating a clearer monthly plan instead of guessing each month</li>
-              <li>Comparing loan terms before relying more on credit cards</li>
-            </ul>
-
-            <p className="text-sm md:text-base text-gray-500 mt-3 max-w-4xl mx-auto">
-              Personal loans are not right for everyone. Availability, rates, and terms depend on
-              lender criteria, credit profile, income, and state regulations.
+          {/* PRIMARY CTA */}
+          <section className="bg-sky-100 border-y border-sky-200 px-5 py-5 text-center">
+            <strong className="block text-[18px] text-sky-900 mb-1">
+              Does Your Current Auto Insurance Still Make Sense?
+            </strong>
+            <p className="text-[14px] text-sky-800 max-w-190 mx-auto mb-3">
+              Take a minute to review coverage options based on your driving habits,
+              vehicle, and location. No obligation to switch or purchase.
             </p>
-          </div>
-
-          {/* Section 3 */}
-          <div className="p-4 sm:p-6">
-            <h2 className="text-center text-base md:text-lg font-semibold mb-4">
-              How This Personal Loan Options Check Works
-            </h2>
-
-            <div className="space-y-2 text-sm md:text-base">
-              <p><strong>Step 1:</strong> Click “See If You Qualify” to continue.</p>
-              <p><strong>Step 2:</strong> Answer a few questions about your finances and location.</p>
-              <p><strong>Step 3:</strong> Review available options and decide whether moving forward makes sense.</p>
-            </div>
-
-            <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-xs sm:text-sm text-red-900 mt-4 max-w-4xl mx-auto">
-              You’re not applying for a loan on this page.
-              Reviewing options does not require you to accept an offer or move forward.
-            </div>
 
             <a
               href="https://h0mlr.ttrk.io/click"
-              className="block w-full sm:max-w-4xl mx-auto my-4 bg-red-600 hover:bg-red-700 text-white text-center py-3 sm:py-4 text-sm md:text-base font-semibold rounded-lg transition"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-6 py-3 rounded-[10px]"
             >
-              See Options →
+              See Options
             </a>
-          </div>
+          </section>
+
+          {/* PRESSURE STRIP */}
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 py-5 bg-slate-50 border-b border-gray-200">
+            <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
+              <strong className="text-[22px] text-red-600 block">Rates ↑</strong>
+              <span className="text-[13px] text-slate-600">
+                Premium often increase without notice
+              </span>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
+              <strong className="text-[22px] text-red-600 block">Miles ↓</strong>
+              <span className="text-[13px] text-slate-600">
+                Many cars are driven far less
+              </span>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
+              <strong className="text-[22px] text-red-600 block">Costs ↑</strong>
+              <span className="text-[13px] text-slate-600">
+                Gas, repairs, and living expenses add pressure
+              </span>
+            </div>
+          </section>
+
+          {/* WHY SECTION */}
+          <section className="px-5 py-6">
+            <h2 className="text-center text-[22px] font-semibold mb-4">
+              Why Drivers Are Reviewing Their Policies
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="border border-gray-200 rounded-xl p-4">
+                <h3 className="text-[16px] font-semibold mb-1">
+                  Set-and-Forget Coverage
+                </h3>
+                <p className="text-[14px] text-slate-600">
+                  Policies often stay unchanged for years, even when driving habits shift.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-xl p-4">
+                <h3 className="text-[16px] font-semibold mb-1">
+                  Multiple Cars Per Household
+                </h3>
+                <p className="text-[14px] text-slate-600">
+                  Families with more than one vehicle may have more options than they realize.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-xl p-4">
+                <h3 className="text-[16px] font-semibold mb-1">
+                  Changed Driving Patterns
+                </h3>
+                <p className="text-[14px] text-slate-600">
+                  Commutes, errands, and usage evolve — insurance doesn’t always adjust automatically.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* DISCOVERY */}
+          <section className="px-5 py-6">
+            <h2 className="text-center text-[22px] font-semibold mb-4">
+              What Many Drivers Discover After Comparing
+            </h2>
+
+            <ul className=" list-disc pl-5 text-[15px] space-y-2 list-inside text-left mx-auto w-fit ">
+              <li>How coverage choices affect monthly premium</li>
+              <li>Whether mileage or usage-based options are available</li>
+              <li>If restructuring coverage fits current driving behavior better</li>
+              <li>That reviewing options doesn’t require switching providers</li>
+            </ul>
+
+            <p className="text-center text-[12px] text-slate-500 mt-3">
+              Availability, coverage, and pricing vary by insurer, state regulations, and driving history.
+            </p>
+          </section>
+
+          {/* FINAL CTA */}
+          <section className="bg-slate-900 text-white text-center px-5 py-6">
+            <h2 className="text-[24px] font-semibold mb-2">
+              Take 60 Seconds to Review Your Coverage
+            </h2>
+            <p className="text-[14px] text-indigo-200 mb-4">
+              Checking options does not obligate you to change or purchase a policy.
+            </p>
+
+            <a
+              href="https://h0mlr.ttrk.io/click"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-6 py-3 rounded-[10px]"
+            >
+              See Options
+            </a>
+          </section>
+
         </div>
 
-        {/* Footer */}
-        <footer className="mt-6 text-xs sm:text-sm text-gray-600 text-center space-y-3 px-2">
-          <div className="flex flex-wrap justify-center gap-2">
-            <Link href="/privacy" className="underline text-gray-900">Privacy Policy</Link>
-            <span>|</span>
-            <Link href="/terms" className="underline text-gray-900">Terms of Use</Link>
-            <span>|</span>
+        {/* FOOTER */}
+        <footer className="text-center text-[11px] text-slate-500 mt-5 space-y-2">
+          <div>
+            <Link href="/privacy" className="underline mx-1">
+              Privacy Policy
+            </Link>
+            |
+            <Link href="/terms" className="underline mx-1">
+              Terms
+            </Link>
           </div>
 
           <p>
-            <strong>Disclosure:</strong> This website is an advertising and referral service and may receive
-            compensation from partners. We are not a lender, broker, or financial institution.
-            Loan approval, rates, and terms vary by lender and individual circumstances.
-            Content is informational only and not financial advice.
+            This site may receive compensation from insurance partners.
+            We are not an insurance company or agency.
           </p>
 
-          <p className="text-[8px]">Linkinon Inc. · 1007 N Orange St, 4th Floor, Suite 1382, Wilmington, DE 19801 · United States</p>
+          <p>
+            PennyPerMiles · 1007 N Orange St, 4th Floor, Suite 1382, Wilmington, DE 19801 · United States
+          </p>
         </footer>
+
       </div>
     </div>
   );
-};
-
-export default PersonalLoanPage;
+}

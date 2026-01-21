@@ -1,227 +1,182 @@
+
+
 import React from "react";
 
-export const metadata = {
-  title: "Privacy Policy | DailyPennyGuide",
-  description:
-    "Learn how Daily Smart Saving collects, uses, and protects your personal information. Read our Privacy Policy for full details.",
-};
-
-const page = () => {
+export default function page() {
   return (
-    <main className="bg-white text-gray-800">
-      <div className="max-w-5xl mx-auto px-4 py-10">
-        <h1 className="text-4xl font-bold mb-2 text-center">Privacy Policy</h1>
-        <p className="text-md text-gray-500 mb-6">
-          Last Updated: <span className="italic">01-20-2026</span>
+    <div className="bg-gray-50 min-h-screen py-10 px-6 md:px-20 font-sans text-gray-800">
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow">
+        <h1 className="text-3xl font-bold text-center mb-8">Privacy & Policy</h1>
+
+        <p className="text-sm mb-4">
+          PennyPerMiles is committed to respecting your privacy and protecting your personal data. This Privacy
+          note discloses how Penny Per Miles (collectively “Penny Per Miles”, “we”, “us”, or “our”) collects and
+          uses information of our users when they visit our website, www.dailysmartsaving.com.
         </p>
 
-        <p className="mb-4">
-          Daily Smart Saving is committed to respecting your privacy and
-          protecting your personal data. This Privacy Policy explains how Daily
-          Smart Saving (“we”, “us”, or “our”) collects and uses information of our
-          users when they visit our website,
-          <strong> www.dailysmartsaving.com</strong>.
+        <p className="text-sm mb-4">
+          By visiting the website or accessing any items of this website, you agree to accept the terms and conditions
+          stated in this Privacy Policy. And by using this website, you consent to our use of your personal information
+          in accordance with this Privacy Policy. If you do not accept the terms and conditions, then do not use our
+          website.
         </p>
 
-        <p className="mb-6">
-          By visiting the website or accessing any items of this website, you
-          agree to accept the terms and conditions stated in this Privacy Policy.
-          If you do not accept these terms, please do not use our website.
+        {/* Section 1 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">1. WHAT INFORMATION WE COLLECT</h2>
+        <p className="text-sm mb-4">
+          We collect certain personally identifiable information from our users which includes but not limited to:
+        </p>
+        <ul className="list-disc list-inside text-sm space-y-1 mb-4">
+          <li>
+            <strong>Personal Information:</strong> includes email, name, address, phone number, and other info when you
+            register or contact us.
+          </li>
+          <li>
+            <strong>Technical Information:</strong> includes internet protocol (IP) address, browser type, version,
+            location, and operating system.
+          </li>
+        </ul>
+
+        {/* Section 2 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">2. HOW WE COLLECT IT</h2>
+        <p className="text-sm mb-4">We collect your information when you:</p>
+        <ul className="list-disc list-inside text-sm space-y-1 mb-4">
+          <li>Register or log into our website</li>
+          <li>Subscribe to our newsletter</li>
+          <li>Open our emails</li>
+          <li>Submit forms on our site</li>
+          <li>Interact with us through social media</li>
+        </ul>
+
+        {/* Section 3 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">3. WHY WE COLLECT IT</h2>
+        <p className="text-sm mb-4">
+          We collect your personal information for the following purposes:
+        </p>
+        <ul className="list-disc list-inside text-sm space-y-1 mb-4">
+          <li>To provide you with a better user experience</li>
+          <li>Improve the website</li>
+          <li>For personalized marketing and direct offers</li>
+          <li>To respond to your queries and support requests</li>
+          <li>For website analytics</li>
+          <li>For legal obligations and resolving disputes</li>
+        </ul>
+
+        {/* Section 4 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">4. DISCLOSING THE INFORMATION</h2>
+        <p className="text-sm mb-4">
+          We understand the importance of securing your information. We share it only with:
+        </p>
+        <ul className="list-disc list-inside text-sm space-y-1 mb-4">
+          <li>Our staff and partners to deliver the services you requested.</li>
+          <li>Legal authorities if required by law.</li>
+          <li>When necessary to defend, prevent, or investigate fraud or cyber incidents.</li>
+        </ul>
+
+        {/* Section 5 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">5. WHO DO WE SHARE INFORMATION WITH</h2>
+        <ul className="list-disc list-inside text-sm space-y-1 mb-4">
+          <li>
+            <strong>(a)</strong> Partners and vendors — to ensure services you requested are delivered effectively.
+          </li>
+          <li>
+            <strong>(b)</strong> Affiliates — so that we can provide relevant information and offers.
+          </li>
+          <li>
+            <strong>(c)</strong> Authorities — when required by law or for fraud prevention.
+          </li>
+        </ul>
+
+        {/* Section 6 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">6. INFORMATION SECURITY</h2>
+        <p className="text-sm mb-4">
+          We use secure server systems and industry-standard encryption to store and protect your data. While we take
+          every precaution, no online platform is 100% secure, and we cannot guarantee the absolute security of your
+          personal information.
         </p>
 
-        {/* 1. What Information We Collect */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            1. What Information We Collect
-          </h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>
-              <strong>Personal Information:</strong> Email address, name,
-              address, phone number, and other details when you register or
-              contact us.
-            </li>
-            <li>
-              <strong>Technical Information:</strong> IP address, browser type
-              and version, location, and operating system.
-            </li>
-          </ul>
-        </section>
+        {/* Section 7 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">7. THIRD-PARTY ADVERTISING</h2>
+        <p className="text-sm mb-4">
+          We may display third-party advertisements when you visit our website. These ads may use cookies or tracking
+          technologies to show relevant content based on your browsing habits.
+        </p>
 
-        {/* 2. How We Collect It */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">2. How We Collect It</h2>
-          <p className="mb-2">We collect your information when you:</p>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Register or log into our website</li>
-            <li>Subscribe to our newsletter</li>
-            <li>Open our emails</li>
-            <li>Submit forms on our site</li>
-            <li>Interact with us through social media</li>
-          </ul>
-        </section>
+        {/* Section 8 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">8. LINKS TO OTHER WEBSITES</h2>
+        <p className="text-sm mb-4">
+          Our site may contain links to third-party websites. We are not responsible for the content or privacy
+          practices of those websites.
+        </p>
 
-        {/* 3. Why We Collect It */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">3. Why We Collect It</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>To provide a better user experience</li>
-            <li>To improve our website</li>
-            <li>For personalized marketing and direct offers</li>
-            <li>To respond to queries and support requests</li>
-            <li>For website analytics</li>
-            <li>For legal obligations and dispute resolution</li>
-          </ul>
-        </section>
+        {/* Section 9 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">9. LIMITATION OF LIABILITY</h2>
+        <p className="text-sm mb-4">
+          Penny Per Miles shall not be held liable for damages, losses, or misuse of any information due to
+          third-party activities, hacking, or force majeure events.
+        </p>
 
-        {/* 4. Disclosing the Information */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            4. Disclosing the Information
-          </h2>
-          <p className="mb-2">
-            We share your information only when necessary:
-          </p>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>With staff and partners to deliver requested services</li>
-            <li>With legal authorities when required by law</li>
-            <li>To prevent, investigate, or defend against fraud or cyber incidents</li>
-          </ul>
-        </section>
+        {/* Section 10 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">10. No Warranties</h2>
+        <p className="text-sm mb-4">
+          Although Penny Per Miles attempts to provide accurate content on the website, it makes no warranty 
+          that such content is accurate or suitable for any particular purpose will meet your requirements, 
+          or will be available on an uninterrupted, timely, secure, or error-free basis.
+        </p>
 
-        {/* 5. Who Do We Share Information With */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            5. Who Do We Share Information With
-          </h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Partners and vendors</li>
-            <li>Affiliates for relevant offers and information</li>
-            <li>Authorities when legally required</li>
-          </ul>
-        </section>
+        {/* Section 11 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">11. SPAM AND SALE OF INFORMATION</h2>
+        <p className="text-sm mb-4">
+          We despise spam. We will never do something that we hate ourselves. Thus, you can rest assured 
+          that we will not spam your mailboxes with unsolicited emails, and we will never sell your information 
+          to other parties.
+        </p>
 
-        {/* 6. Information Security */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">6. Information Security</h2>
-          <p>
-            We use secure servers and industry-standard encryption to protect
-            your data. However, no online system is completely secure, and we
-            cannot guarantee absolute security.
-          </p>
-        </section>
+        {/* Section 12 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">12. INDEMNIFICATION</h2>
+        <p className="text-sm mb-4">
+         You agree to indemnify, defend, and hold Penny Per Miles harmless from and against all expenses, 
+         claims, losses, damages, and costs, including reasonable attorney’s fees, arising out of or relating 
+         to any misuse by the User of the content and services provided on the website.
+        </p>
 
-        {/* 7. Third-Party Advertising */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            7. Third-Party Advertising
-          </h2>
-          <p>
-            We may display third-party advertisements that use cookies or
-            tracking technologies to show relevant content based on browsing
-            behavior.
-          </p>
-        </section>
+        {/* Section 13 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">13. MODIFICATION</h2>
+        <p className="text-sm mb-4">
+          We reserve the right to modify this Privacy Policy at any time. The latest version will always be available
+          on this page with an updated date.
+        </p>
 
-        {/* 8. Links to Other Websites */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            8. Links to Other Websites
-          </h2>
-          <p>
-            Our website may contain links to third-party websites. We are not
-            responsible for the privacy practices or content of those websites.
-          </p>
-        </section>
+        {/* Section 14 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">14. DISCLAIMER</h2>
+        <p className="text-sm mb-4">
+          The information contained on our website has been obtained from sources believed to be reliable. 
+          Penny Per Miles disclaims all warranties as to the accuracy, completeness of the materials, 
+          or the reliability of any advice, statement, opinion, or other information distributed through 
+          the website. You agree that any reliance on any such statement, opinion, advice, or information 
+          shall be at your sole risk and shall not be held against Penny Per Miles for any legal or 
+          personal purposes. Penny Per Miles reserves the right, in its sole discretion, to correct 
+          any errors or omissions in any portion of the Website. Penny Per Miles may change or 
+          discontinue any aspect of its website at any time, including, its content described in the 
+          website without notice.
+        </p>
 
-        {/* 9. Limitation of Liability */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            9. Limitation of Liability
-          </h2>
-          <p>
-            Daily Smart Saving shall not be liable for any damages, losses, or
-            misuse of information due to third-party activities, hacking, or
-            force majeure events.
-          </p>
-        </section>
+        {/* Section 15 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">15. CHANGES TO THIS PRIVACY POLICY</h2>
+        <p className="text-sm mb-4">
+          We aim to meet the highest of standards. We reserve the right to amend the terms of service 
+          mentioned in this Privacy Policy with or without prior notice. However, if you do not agree 
+          to the changes, you may discontinue accessing our website. Hence, check this page at regular 
+          intervals for the latest changes and updates.
+        </p>
 
-        {/* 10. No Warranties */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">10. No Warranties</h2>
-          <p>
-            We make no warranties regarding accuracy, suitability, availability,
-            or error-free operation of the website or its content.
-          </p>
-        </section>
-
-        {/* 11. Spam and Sale of Information */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            11. Spam and Sale of Information
-          </h2>
-          <p>
-            We do not spam users and never sell personal information to third
-            parties.
-          </p>
-        </section>
-
-        {/* 12. Indemnification */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">12. Indemnification</h2>
-          <p>
-            You agree to indemnify and hold Daily Smart Saving harmless from any
-            claims, losses, damages, or legal expenses arising from misuse of the
-            website or its services.
-          </p>
-        </section>
-
-        {/* 13. Modification */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">13. Modification</h2>
-          <p>
-            We reserve the right to modify this Privacy Policy at any time. The
-            updated version will always be available on this page.
-          </p>
-        </section>
-
-        {/* 14. Disclaimer */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">14. Disclaimer</h2>
-          <p>
-            All information on this website is provided “as is.” Any reliance on
-            the content is at your own risk. We may change or discontinue any
-            part of the website at any time without notice.
-          </p>
-        </section>
-
-        {/* 15. Changes to This Privacy Policy */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            15. Changes to This Privacy Policy
-          </h2>
-          <p>
-            We may update this Privacy Policy at any time. Continued use of the
-            website constitutes acceptance of the revised policy.
-          </p>
-        </section>
-
-        {/* 16. Contact Us */}
-        <section>
-          <h2 className="text-xl font-semibold mb-2">16. Contact Us</h2>
-          <p>
-            If you have any questions regarding this Privacy Policy, contact us
-            at{" "}
-            <a
-              href="mailto:contact@dailysmartsaving.com"
-              className="text-blue-600 underline"
-            >
-              contact@gmail.com
-            </a>
-          </p>
-        </section>
+         {/* Section 16 */}
+        <h2 className="text-lg font-semibold mt-6 mb-2">16. CONTACT US</h2>
+        <p className="text-sm mb-4">
+          If you have any queries regarding our privacy policy or any questions about our practices, 
+          you can contact us at contact@pennypermiles.com
+        </p>
       </div>
-    </main>
+    </div>
   );
-};
-
-export default page;
+}
