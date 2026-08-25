@@ -14,25 +14,27 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-[#f4f4f4] text-[#111827] font-[Arial,Helvetica,sans-serif]">
       <article className="mx-auto w-full max-w-[1080px] overflow-hidden border border-[#d6d6d6] bg-white shadow-sm">
-        <div className="px-4 pb-7 pt-5 sm:px-8 md:px-9 md:pb-10 md:pt-7">
-          <div className="text-center text-[15px] font-black text-[#f12621] sm:text-[18px] md:text-[24px]">Updated 2 Hours Ago</div>
+        <div className="px-4 pb-7 pt-2 sm:px-8 md:px-9 md:pb-10 md:pt-7">
+          <div className="bg-red-500 w-full">
+            <div className="text-center text-[10px] font-semibold text-white sm:text-[10px] md:text-[24px]">Updated 2 Hours Ago</div>
+          </div>
 
-          <h1 className="mx-auto mt-3 max-w-[960px] text-center text-[34px] font-black leading-[1.02] tracking-[-0.045em] text-black sm:text-[48px] md:mt-4 md:text-[62px] lg:text-[68px]">
+          <h1 className="mx-auto max-w-[960px] text-center text-[28px] font-black mt-1 leading-[1.02] tracking-[-0.045em] text-black sm:text-[48px] md:mt-4 md:text-[62px] lg:text-[68px]">
             Paying Too Much<br className="hidden sm:block" /> For Auto Insurance Renewals?
           </h1>
 
-          <div className="mt-3 text-center font-black leading-[1.08] tracking-[-0.025em] md:mt-4">
-            <div className="text-[21px] text-[#f12d27] sm:text-[28px] md:text-[36px]">Americans Are Saving $652/Year</div>
-            <div className="mt-1 text-[20px] text-black sm:text-[27px] md:text-[34px]">By Switching In Minutes.</div>
+          <div className="mt-1 text-center font-black leading-[1.08] tracking-[-0.025em] md:mt-4">
+            <div className="text-[18px] text-[#f12d27] sm:text-[24px] md:text-[36px]">Americans Are Saving $652/Year</div>
+            <div className="mt-1 text-[17px] text-black sm:text-[27px] md:text-[34px]">By Switching In Minutes.</div>
             <div className="mt-2 inline-block bg-[#ffe400] px-3 py-1 text-[22px] text-black sm:text-[30px] md:text-[38px]">See If You Can Save Now.</div>
           </div>
 
-          <p className="mt-4 text-center text-[16px] font-medium leading-[1.55] text-[#171717] sm:text-[20px] md:text-[26px]">
+          <p className="mt-2 text-center text-[16px] font-medium leading-[1.2] text-[#171717] sm:text-[20px] md:text-[26px]">
             Get real quotes from top-rated companies in your area.<br />
             No spam. No fees. Just real savings.
           </p>
 
-          <div className="mt-5 overflow-hidden rounded-[20px] sm:mt-6 md:rounded-[24px]">
+          <div className="mt-3 overflow-hidden rounded-[20px] sm:mt-6 md:rounded-[24px]">
             <img src="/hero-reference.png" alt="Auto insurance comparison" className="block h-auto w-full" />
           </div>
 
@@ -77,7 +79,7 @@ export default function Page() {
           </p>
 
           <section className="mt-5 flex items-center gap-4 rounded-[20px] border border-[#d6e5d6] bg-[#f4fbf4] px-4 py-4 md:gap-6 md:px-7 md:py-5">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center text-[45px] text-[#09a844] md:h-20 md:w-20 md:text-[60px]">♢</div>
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center text-[45px] text-[#09a844] md:h-20 md:w-20 md:text-[60px]">🛡️</div>
             <div><h2 className="text-[18px] font-black text-black sm:text-[21px] md:text-[27px]">Shop &amp; Save With Confidence</h2><p className="mt-1 text-[13px] leading-[1.4] text-black sm:text-[16px] md:text-[20px]">Comparing quotes won’t affect your credit score<br className="hidden sm:block" /> and there’s never any obligation to buy.</p></div>
           </section>
 
