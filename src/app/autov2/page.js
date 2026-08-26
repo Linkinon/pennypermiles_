@@ -243,7 +243,7 @@ export default function Page() {
 
           <section className="mt-[9px] flex items-center gap-[9px] rounded-[11px] border border-[#d6e5d6] bg-[#f4fbf4] px-[10px] py-[8px] sm:mt-5 sm:gap-4 sm:rounded-[20px] sm:px-4 sm:py-4 md:gap-6 md:px-7 md:py-5">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[29px] text-[#09a844] sm:h-14 sm:w-14 sm:text-[45px] md:h-20 md:w-20 md:text-[60px]">
-              ♢
+              🛡️
             </div>
             <div>
               <h2 className="text-[12px] font-black text-black sm:text-[21px] md:text-[27px]">
