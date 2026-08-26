@@ -126,17 +126,17 @@ export default function Page() {
             Updated 2 Hours Ago
           </div>
 
-          <h1 className="mx-auto mt-[4px] max-w-[960px] text-center text-[25px] font-black leading-[0.98] tracking-[-0.045em] text-black sm:mt-3 sm:text-[48px] md:mt-4 md:text-[62px] lg:text-[68px]">
+          <h1 className="mx-auto mt-[8px] max-w-[960px] text-center text-[25px] font-black leading-[0.98] tracking-[-0.045em] text-black sm:mt-3 sm:text-[48px] md:mt-4 md:text-[62px] lg:text-[68px]">
             Paying Too Much
             <br />
             For Auto Insurance Renewals?
           </h1>
 
-          <div className="mt-[2px] text-center font-black leading-[1.05] tracking-[-0.025em] sm:mt-3 md:mt-4">
+          <div className="mt-[4px] text-center font-black leading-[1.05] tracking-[-0.025em] sm:mt-3 md:mt-4">
             <div className="text-[16px] text-[#f12d27] sm:text-[28px] md:text-[36px]">
               Americans Are Saving $652/Year
             </div>
-            <div className="mt-[2px] text-[14px] text-black sm:mt-1 sm:text-[27px] md:text-[34px]">
+            <div className="mt-[4px] text-[14px] text-black sm:mt-1 sm:text-[27px] md:text-[34px]">
               By Switching In Minutes.
             </div>
             <div className="mt-[5px] inline-block bg-[#ffe400] px-[7px] py-[2px] text-[17px] text-black sm:mt-2 sm:px-3 sm:py-1 sm:text-[30px] md:text-[38px]">
