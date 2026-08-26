@@ -35,7 +35,7 @@ export default function Page() {
         </header>
 
         <section className="relative mt-5 overflow-hidden rounded-[16px] sm:mt-7 sm:rounded-[20px]">
-          <img src="/family-suv-hero.jpg" alt="Family-size compact SUV on an American road" className="h-[172px] w-full object-cover sm:h-[285px] md:h-[320px]" />
+          <img src="/hero-reference.png" alt="Family-size compact SUV on an American road" className="h-[172px] w-full object-cover sm:h-[285px] md:h-[320px]" />
           <div className="absolute bottom-[8px] left-[10px] top-[8px] flex w-[132px] flex-col justify-center rounded-[14px] bg-black/80 px-3 text-white sm:bottom-[18px] sm:left-[20px] sm:top-[18px] sm:w-[215px] sm:px-5">
             <div className="text-[13px] font-bold leading-[1.25] sm:text-[21px]">Drivers Who<br />Compared<br />Saved an<br />Average of</div>
             <div className="mt-2 text-[43px] font-black leading-none text-[#00d43b] sm:text-[67px]">$652</div>
