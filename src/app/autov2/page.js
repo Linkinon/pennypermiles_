@@ -102,6 +102,7 @@
 
 
 'use client';
+import Link from 'next/link';
 
 const reasons = [
   ['$', 'Rates Just', 'Went Up'],
@@ -265,10 +266,13 @@ export default function Page() {
                         Terms
                       </Link>
                       |
-                       <Link href="/disclosure" className="underline mx-1">
+                      <Link href="/disclosure" className="underline mx-1">
                         Affiliate Disclosure
                       </Link>
+                      
             </div>
+            {/* <h3 className="text-xs my-6 px-4">This website helps users get the best information so they can make informed decisions and save money.<br/> 
+            This article is for demo purposes only. By proceeding you are agreeing to our terms and conditions.</h3> */}
             <div className="mt-[3px]">
               This site may receive compensation from insurance partners. We are not an insurance company or agency.
             </div>
