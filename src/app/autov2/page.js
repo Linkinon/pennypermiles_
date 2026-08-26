@@ -152,7 +152,7 @@ export default function Page() {
 
           <div className=" overflow-hidden rounded-[11px] sm:mt-6 sm:rounded-[20px] md:rounded-[24px]">
             <img
-              src="/hero-reference.png"
+              src="/car2.jpeg"
               alt="Auto insurance comparison"
               className="block h-auto w-full"
             />
