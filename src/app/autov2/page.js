@@ -256,7 +256,19 @@ export default function Page() {
           </section>
 
           <footer className="mt-[10px] text-center text-[6px] leading-[1.6] text-[#7a838d] sm:mt-5 sm:text-[10px]">
-            <div className="underline">Privacy Policy | Terms</div>
+           <div>
+                      <Link href="/privacy" className="underline mx-1">
+                        Privacy Policy
+                      </Link>
+                      |
+                      <Link href="/terms" className="underline mx-1">
+                        Terms
+                      </Link>
+                      |
+                       <Link href="/disclosure" className="underline mx-1">
+                        Affiliate Disclosure
+                      </Link>
+            </div>
             <div className="mt-[3px]">
               This site may receive compensation from insurance partners. We are not an insurance company or agency.
             </div>
