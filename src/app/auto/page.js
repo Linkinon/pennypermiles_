@@ -93,6 +93,10 @@ export default function Page() {
                       <Link href="/terms" className="underline mx-1">
                         Terms
                       </Link>
+                      |
+                      <Link href="/disclosure" className="underline mx-1">
+                        Affiliate Disclosure
+                      </Link>
                     </div>
           
                     <p>
