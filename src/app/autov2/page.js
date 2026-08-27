@@ -99,8 +99,6 @@
 //     </main>
 //   );
 // }
-
-
 'use client';
 import Link from 'next/link';
 
@@ -121,94 +119,94 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-[#f4f4f4] font-[Arial,Helvetica,sans-serif] text-[#111827]">
       <article className="mx-auto w-full max-w-[1080px] overflow-hidden border border-[#d6d6d6] bg-white shadow-sm">
-        <div className="px-[14px] pb-5 pt-[11px] sm:px-8 sm:pb-8 sm:pt-5 md:px-9 md:pb-10 md:pt-7">
+        <div className="px-[14px] pb-5 pt-[11px] sm:px-8 sm:pb-8 sm:pt-5 md:px-9 md:pb-6 md:pt-5">
 
-          <div className="w-full bg-[#ff2f39] py-[3px] text-center text-[12px] font-black leading-none text-white sm:bg-transparent sm:py-0 sm:text-[18px] sm:text-[#f12621] md:text-[24px]">
+          <div className="w-full bg-[#ff2f39] py-[3px] text-center text-[12px] font-black leading-none text-white sm:bg-transparent sm:py-0 sm:text-[18px] sm:text-[#f12621] md:bg-[#ff2f39] md:py-[6px] md:text-[12px] md:text-white">
             Updated 2 Hours Ago
           </div>
 
-          <h1 className="mx-auto mt-[8px] max-w-[960px] text-center text-[25px] font-black leading-[0.98] tracking-[-0.045em] text-black sm:mt-3 sm:text-[48px] md:mt-4 md:text-[62px] lg:text-[68px]">
+          <h1 className="mx-auto mt-[8px] max-w-[960px] text-center text-[25px] font-black leading-[0.98] tracking-[-0.045em] text-black sm:mt-3 sm:text-[48px] md:mt-3 md:text-[36px] lg:text-[36px]">
             Paying Too Much
             <br />
             For Auto Insurance Renewals?
           </h1>
 
-          <div className="mt-[4px] text-center font-black leading-[1.05] tracking-[-0.025em] sm:mt-3 md:mt-4">
-            <div className="text-[16px] text-[#f12d27] sm:text-[28px] md:text-[36px]">
+          <div className="mt-[4px] text-center font-black leading-[1.05] tracking-[-0.025em] sm:mt-3 md:mt-1">
+            <div className="text-[16px] text-[#f12d27] sm:text-[28px] md:text-[24px]">
               Americans Are Saving $652/Year
             </div>
-            <div className="mt-[4px] text-[14px] text-black sm:mt-1 sm:text-[27px] md:text-[34px]">
+            <div className="mt-[4px] text-[14px] text-black sm:mt-1 sm:text-[27px] md:text-[22px]">
               By Switching In Minutes.
             </div>
-            <div className="mt-[5px] inline-block bg-[#ffe400] px-[7px] py-[2px] text-[17px] text-black sm:mt-2 sm:px-3 sm:py-1 sm:text-[30px] md:text-[38px]">
+            <div className="mt-[5px] inline-block bg-[#ffe400] px-[7px] py-[2px] text-[17px] text-black sm:mt-2 sm:px-3 sm:py-1 sm:text-[30px] md:mt-1 md:text-[23px]">
               See If You Can Save Now.
             </div>
           </div>
 
-          <p className="mt-[3px] text-center text-[12px] font-medium leading-[1.35] text-[#171717] sm:mt-4 sm:text-[20px] sm:leading-[1.55] md:text-[26px]">
+          <p className="mt-[3px] text-center text-[12px] font-medium leading-[1.35] text-[#171717] sm:mt-4 sm:text-[20px] sm:leading-[1.55] md:mt-2 md:text-[17px]">
             Get real quotes from top-rated companies in your area.
             <br />
             No spam. No fees. Just real savings.
           </p>
 
-          <div className=" overflow-hidden rounded-[11px] sm:mt-6 sm:rounded-[20px] md:rounded-[24px]">
+          <div className="overflow-hidden rounded-[11px] sm:mt-6 sm:rounded-[20px] md:mt-4 md:rounded-[24px] md:h-[380px]">
             <img
               src="/car2.jpeg"
               alt="Auto insurance comparison"
-              className="block h-auto w-full"
+              className="block h-auto w-full md:h-full md:w-full md:object-cover"
             />
           </div>
 
-          <div className="relative mt-[9px] grid grid-cols-2 overflow-hidden rounded-[11px] border border-[#d8dfd8] sm:mt-5 sm:rounded-[20px] md:rounded-[24px]">
-            <div className="bg-[#fff5ed] px-1 py-[9px] text-center sm:px-5 sm:py-5 md:py-6">
-              <div className="text-[7px] font-bold uppercase text-[#946c50] sm:text-[14px] md:text-[18px]">
+          <div className="relative mt-[9px] grid grid-cols-2 overflow-hidden rounded-[11px] border border-[#d8dfd8] sm:mt-5 sm:rounded-[20px] md:mt-2 md:rounded-[24px]">
+            <div className="bg-[#fff5ed] px-1 py-[9px] text-center sm:px-5 sm:py-5 md:py-3">
+              <div className="text-[7px] font-bold uppercase text-[#946c50] sm:text-[14px] md:text-[14px]">
                 Current Premium Example
               </div>
-              <div className="relative mx-auto mt-[2px] w-fit text-[24px] font-black leading-none text-[#6f7981] sm:mt-1 sm:text-[48px] md:text-[60px]">
+              <div className="relative mx-auto mt-[2px] w-fit text-[24px] font-black leading-none text-[#6f7981] sm:mt-1 sm:text-[48px] md:text-[24px]">
                 $189/mo
-                <span className="absolute left-[-3%] top-[52%] h-[2px] w-[106%] -rotate-6 rounded bg-[#ef2d2d] sm:h-[4px] md:h-[5px]" />
+                <span className="absolute left-[-3%] top-[52%] h-[2px] w-[106%] -rotate-6 rounded bg-[#ef2d2d] sm:h-[4px] md:h-[3px]" />
               </div>
             </div>
 
-            <div className="bg-[#eff9f0] px-1 py-[9px] text-center sm:px-5 sm:py-5 md:py-6">
-              <div className="text-[7px] font-bold uppercase text-[#397747] sm:text-[14px] md:text-[18px]">
+            <div className="bg-[#eff9f0] px-1 py-[9px] text-center sm:px-5 sm:py-5 md:py-3">
+              <div className="text-[7px] font-bold uppercase text-[#397747] sm:text-[14px] md:text-[14px]">
                 Compare Options From
               </div>
-              <div className="mt-[2px] text-[24px] font-black leading-none text-[#0ab13d] sm:mt-1 sm:text-[48px] md:text-[60px]">
+              <div className="mt-[2px] text-[24px] font-black leading-none text-[#0ab13d] sm:mt-1 sm:text-[48px] md:text-[24px]">
                 $39/mo*
               </div>
             </div>
 
-            <div className="absolute left-1/2 top-1/2 flex h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d4d9d5] bg-white text-[18px] font-black text-[#0ab13d] sm:h-14 sm:w-14 sm:text-[38px] md:h-16 md:w-16">
+            <div className="absolute left-1/2 top-1/2 flex h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d4d9d5] bg-white text-[18px] font-black text-[#0ab13d] sm:h-14 sm:w-14 sm:text-[38px] md:h-9 md:w-9 md:text-[18px]">
               →
             </div>
           </div>
 
           <button
             onClick={go}
-            className="mt-[9px] w-full rounded-[10px] bg-[linear-gradient(180deg,#18c85c,#08a842)] py-[10px] text-center text-[17px] font-black text-white shadow-sm sm:mt-5 sm:rounded-[18px] sm:py-4 sm:text-[28px] md:rounded-[20px] md:py-5 md:text-[34px]"
+            className="mt-[9px] w-full rounded-[10px] bg-[linear-gradient(180deg,#18c85c,#08a842)] py-[10px] text-center text-[17px] font-black text-white shadow-sm sm:mt-5 sm:rounded-[18px] sm:py-4 sm:text-[28px] md:mt-2 md:rounded-[16px] md:py-3 md:text-[20px]"
           >
             CHECK MY RATES NOW&nbsp; ›
           </button>
 
-          <div className="mt-[2px] text-center text-[10px] font-medium text-[#202938] sm:mt-3 sm:text-[17px] md:text-[21px]">
+          <div className="mt-[2px] text-center text-[10px] font-medium text-[#202938] sm:mt-3 sm:text-[17px] md:mt-2 md:text-[15px]">
             🔒 &nbsp; Fast, Secure &amp; Free – Takes 60 Seconds
           </div>
 
-          <section className="mt-[3px] rounded-[11px] border border-[#d9d9d9] bg-[#fcfcfc] px-1 py-[8px] sm:mt-5 sm:rounded-[20px] sm:px-4 sm:py-4 md:mt-6 md:rounded-[24px]">
-            <h2 className="text-center text-[11px] font-black sm:text-[20px] md:text-[24px]">
+          <section className="mt-[3px] rounded-[11px] border border-[#d9d9d9] bg-[#fcfcfc] px-1 py-[8px] sm:mt-5 sm:rounded-[20px] sm:px-4 sm:py-4 md:mt-4 md:rounded-[24px] md:py-3">
+            <h2 className="text-center text-[11px] font-black sm:text-[20px] md:text-[18px]">
               Why Drivers Are Checking:
             </h2>
-            <div className="mt-[5px] grid grid-cols-4 sm:mt-2">
+            <div className="mt-[5px] grid grid-cols-4 sm:mt-2 md:mt-2">
               {reasons.map((r, i) => (
                 <div
                   key={r[1]}
                   className={`px-[2px] text-center ${i ? 'border-l border-[#e1e1e1]' : ''}`}
                 >
-                  <div className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#10283d] text-[13px] font-black text-white sm:h-12 sm:w-12 sm:text-[22px] md:h-14 md:w-14 md:text-[27px]">
+                  <div className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#10283d] text-[13px] font-black text-white sm:h-12 sm:w-12 sm:text-[22px] md:h-10 md:w-10 md:text-[17px]">
                     {r[0]}
                   </div>
-                  <div className="mt-[4px] text-[7px] font-bold leading-[1.08] sm:mt-2 sm:text-[14px] sm:leading-[1.15] md:text-[17px]">
+                  <div className="mt-[4px] text-[7px] font-bold leading-[1.08] sm:mt-2 sm:text-[14px] sm:leading-[1.15] md:mt-1 md:text-[13px]">
                     {r[1]}
                     <br />
                     {r[2]}
@@ -218,8 +216,8 @@ export default function Page() {
             </div>
           </section>
 
-          <div className="mt-[4px] whitespace-nowrap text-center text-[9px] sm:mt-5 sm:text-[18px] md:text-[21px]">
-            <span className="text-[14px] tracking-[1px] text-[#ffc900] sm:text-[22px] sm:tracking-[2px] md:text-[28px]">
+          <div className="mt-[4px] whitespace-nowrap text-center text-[9px] sm:mt-5 sm:text-[18px] md:mt-3 md:text-[15px]">
+            <span className="text-[14px] tracking-[1px] text-[#ffc900] sm:text-[22px] sm:tracking-[2px] md:text-[20px]">
               ★★★★★
             </span>
             <span className="ml-[5px] sm:ml-2">
@@ -227,36 +225,36 @@ export default function Page() {
             </span>
           </div>
 
-          <div className="mt-[9px] flex flex-wrap justify-center gap-[5px] sm:mt-5 sm:gap-3">
+          <div className="mt-[9px] flex flex-wrap justify-center gap-[5px] sm:mt-5 sm:gap-3 md:mt-3">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-[#ccdaeb] bg-[#f7fbff] px-[9px] py-[4px] text-[8px] font-bold text-[#21456a] sm:px-4 sm:py-2 sm:text-[15px] md:px-5 md:text-[18px]"
+                className="rounded-full border border-[#ccdaeb] bg-[#f7fbff] px-[9px] py-[4px] text-[8px] font-bold text-[#21456a] sm:px-4 sm:py-2 sm:text-[15px] md:px-3 md:py-1 md:text-[13px]"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          <p className="mx-auto mt-[9px] max-w-[930px] text-[9px] leading-[1.45] text-[#29435e] sm:mt-5 sm:text-[18px] sm:leading-[1.55] md:text-[22px]">
+          <p className="mx-auto mt-[9px] max-w-[930px] text-[9px] leading-[1.45] text-[#29435e] sm:mt-5 sm:text-[18px] sm:leading-[1.55] md:mt-3 md:text-[16px]">
             Great fit for <strong>multi-car households</strong>, <strong>homeowners bundling policies</strong>, and <strong>short-trip drivers</strong> doing school runs, grocery trips and everyday commuting.
           </p>
 
-          <section className="mt-[9px] flex items-center gap-[9px] rounded-[11px] border border-[#d6e5d6] bg-[#f4fbf4] px-[10px] py-[8px] sm:mt-5 sm:gap-4 sm:rounded-[20px] sm:px-4 sm:py-4 md:gap-6 md:px-7 md:py-5">
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[29px] text-[#09a844] sm:h-14 sm:w-14 sm:text-[45px] md:h-20 md:w-20 md:text-[60px]">
+          <section className="mt-[9px] flex items-center gap-[9px] rounded-[11px] border border-[#d6e5d6] bg-[#f4fbf4] px-[10px] py-[8px] sm:mt-5 sm:gap-4 sm:rounded-[20px] sm:px-4 sm:py-4 md:mt-4 md:gap-4 md:px-5 md:py-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[29px] text-[#09a844] sm:h-14 sm:w-14 sm:text-[45px] md:h-12 md:w-12 md:text-[32px]">
               🛡️
             </div>
             <div>
-              <h2 className="text-[12px] font-black text-black sm:text-[21px] md:text-[27px]">
+              <h2 className="text-[12px] font-black text-black sm:text-[21px] md:text-[18px]">
                 Shop &amp; Save With Confidence
               </h2>
-              <p className="mt-[2px] text-[8px] leading-[1.35] text-black sm:mt-1 sm:text-[16px] sm:leading-[1.4] md:text-[20px]">
+              <p className="mt-[2px] text-[8px] leading-[1.35] text-black sm:mt-1 sm:text-[16px] sm:leading-[1.4] md:text-[14px]">
                 Comparing quotes won’t affect your credit score and there’s never any obligation to buy.
               </p>
             </div>
           </section>
 
-          <footer className="mt-[10px] text-center text-[6px] leading-[1.6] text-[#7a838d] sm:mt-5 sm:text-[10px]">
+          <footer className="mt-[10px] text-center text-[6px] leading-[1.6] text-[#7a838d] sm:mt-5 sm:text-[10px] md:mt-3">
            <div>
                       <Link href="/privacy" className="underline mx-1">
                         Privacy Policy
@@ -271,8 +269,6 @@ export default function Page() {
                       </Link>
                       
             </div>
-            {/* <h3 className="text-xs my-6 px-4">This website helps users get the best information so they can make informed decisions and save money.<br/> 
-            This article is for demo purposes only. By proceeding you are agreeing to our terms and conditions.</h3> */}
             <div className="mt-[3px]">
               This site may receive compensation from insurance partners. We are not an insurance company or agency.
             </div>
@@ -282,5 +278,3 @@ export default function Page() {
     </main>
   );
 }
-
-
