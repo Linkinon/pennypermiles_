@@ -115,7 +115,6 @@
 // }
 
 
-
 'use client';
 import Link from "next/link";
 
@@ -131,7 +130,7 @@ export default function Page() {
   const go = () => { window.location.href = 'https://h0mlr.ttrk.io/click'; };
   return (
     <main className="min-h-screen bg-[#f4f4f4] text-[#111827] font-[Arial,Helvetica,sans-serif]">
-      <article className="mx-auto w-full max-w-[950px] overflow-hidden border border-[#d6d6d6] bg-white shadow-sm">
+      <article className="mx-auto w-full max-w-4xl overflow-hidden border border-[#d6d6d6] bg-white shadow-sm">
         <div className="px-4 pb-7 pt-2 sm:px-8 md:px-9 md:pb-6 ">
           <div className="bg-red-500 w-full">
             <div className="text-center text-[10px] font-semibold text-white sm:text-[10px] md:text-[12px]">Updated 2 Hours Ago</div>
@@ -152,26 +151,26 @@ export default function Page() {
             No spam. No fees. Just real savings.
           </p>
 
-          <div className="mt-2 overflow-hidden rounded-[20px] sm:mt-1 md:mt-4 md:rounded-[24px] md:h-[250px] md:flex md:items-center md:justify-center md:bg-white">
+          <div className="mt-1 overflow-hidden rounded-[20px]  md:rounded-[24px] md:h-[250px] md:flex md:items-center md:justify-center md:bg-white">
             <img src="/hero-reference.png" alt="Auto insurance comparison" className="block h-auto w-full md:h-full md:w-auto md:max-w-full md:object-contain" />
           </div>
 
-          <div className="relative mt-2 grid grid-cols-2 overflow-hidden rounded-[20px] border border-[#d8dfd8] md:mt-4 md:rounded-[24px]">
-            <div className="bg-[#fff5ed] px-2 py-4 text-center sm:px-5 sm:py-5 md:py-4">
-              <div className="text-[10px] font-bold uppercase text-[#946c50] sm:text-[12px] md:text-[13px]">Current Premium Example</div>
-              <div className="relative mx-auto mt-1 w-fit text-[31px] font-black leading-none text-[#6f7981] sm:text-[32px] ">
+          <div className="relative mt-4 grid grid-cols-2 overflow-hidden rounded-[20px] border border-[#d8dfd8] md:mt-2 md:rounded-[24px]">
+            <div className="bg-[#fff5ed] px-2 py-4 text-center sm:px-5 sm:py-5 md:py-3">
+              <div className="text-[10px] font-bold uppercase text-[#946c50] sm:text-[12px] md:text-[14px]">Current Premium Example</div>
+              <div className="relative mx-auto mt-1 w-fit text-[31px] font-black leading-none text-[#6f7981] sm:text-[32px] md:text-[24px]">
                 $189/mo
-                <span className="absolute left-[-3%] top-[52%] h-[4px] w-[106%] -rotate-6 rounded bg-[#ef2d2d] md:h-[4px]" />
+                <span className="absolute left-[-3%] top-[52%] h-[4px] w-[106%] -rotate-6 rounded bg-[#ef2d2d] md:h-[3px]" />
               </div>
             </div>
-            <div className="bg-[#eff9f0] px-2 py-4 text-center sm:px-5 sm:py-5 md:py-4">
-              <div className="text-[10px] font-bold uppercase text-[#397747] sm:text-[14px] md:text-[13px]">Compare Options From</div>
-              <div className="mt-1 text-[31px] font-black leading-none text-[#0ab13d] sm:text-[32px] ">$39/mo*</div>
+            <div className="bg-[#eff9f0] px-2 py-4 text-center sm:px-5 sm:py-5 md:py-3">
+              <div className="text-[10px] font-bold uppercase text-[#397747] sm:text-[14px] md:text-[14px]">Compare Options From</div>
+              <div className="mt-1 text-[31px] font-black leading-none text-[#0ab13d] sm:text-[32px] md:text-[24px]">$39/mo*</div>
             </div>
-            <div className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d4d9d5] bg-white text-[30px] font-black text-[#0ab13d] sm:h-14 sm:w-14 sm:text-[38px] md:h-12 md:w-12 md:text-[24px]">→</div>
+            <div className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d4d9d5] bg-white text-[30px] font-black text-[#0ab13d] sm:h-14 sm:w-14 sm:text-[38px] md:h-9 md:w-9 md:text-[18px]">→</div>
           </div>
 
-          <button onClick={go} className="mt-5 w-full rounded-[18px] bg-[linear-gradient(180deg,#18c85c,#08a842)] py-4 text-center text-[22px] font-black text-white shadow-sm sm:text-[28px] md:mt-4 md:rounded-[16px] md:py-3 md:text-[22px]">
+          <button onClick={go} className="mt-2 w-full rounded-[18px] bg-[linear-gradient(180deg,#18c85c,#08a842)] py-3 text-center text-[20px] font-black text-white shadow-sm sm:text-[20px] md:mt-2 md:rounded-[16px] md:py-3 ">
             CHECK MY RATES NOW&nbsp; ›
           </button>
           <div className="mt-3 text-center text-[14px] font-medium text-[#202938] sm:text-[17px] md:mt-2 md:text-[15px]">🔒 &nbsp; Fast, Secure &amp; Free – Takes 60 Seconds</div>
