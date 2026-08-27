@@ -152,8 +152,8 @@ export default function Page() {
             No spam. No fees. Just real savings.
           </p>
 
-          <div className="mt-2 overflow-hidden rounded-[20px] sm:mt-1 md:mt-4 md:rounded-[24px]">
-            <img src="/hero-reference.png" alt="Auto insurance comparison" className="block h-auto w-full md:h-[300px] md:w-full md:object-cover " />
+          <div className="mt-2 overflow-hidden rounded-[20px] sm:mt-1 md:mt-4 md:rounded-[24px] md:h-[250px] md:flex md:items-center md:justify-center md:bg-white">
+            <img src="/hero-reference.png" alt="Auto insurance comparison" className="block h-auto w-full md:h-full md:w-auto md:max-w-full md:object-contain" />
           </div>
 
           <div className="relative mt-2 grid grid-cols-2 overflow-hidden rounded-[20px] border border-[#d8dfd8] md:mt-4 md:rounded-[24px]">
