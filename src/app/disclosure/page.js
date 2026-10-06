@@ -1,9 +1,9 @@
 import React from "react";
 
 export const metadata = {
-  title: "Affiliate Disclosure | DailyPennyGuide",
+  title: "Affiliate Disclosure | PennyPerMiles",
   description:
-    "Learn how Daily Debt Guide collects, uses, and protects your personal information. Read our Privacy Policy for full details.",
+    "Learn how PennyPerMiles collects, uses, and protects your personal information. Read our Privacy Policy for full details.",
 };
 
 const page = () => {
@@ -18,7 +18,7 @@ const page = () => {
         <h3 className="mt-10 font-semibold text-center text-xl">Scope Disclosure</h3>
         <ul className="text-justify mt-4">
             <li>
-                • DailyPennyGuide represents only a limited network of insurance partners, not every provider in the marketplace.
+                • PennyPerMiles represents only a limited network of insurance partners, not every provider in the marketplace.
             </li>
             <li>
                 • All insurance decisions—including eligibility, pricing, underwriting, and approval—are made       exclusively by the participating providers.
