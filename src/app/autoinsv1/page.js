@@ -520,7 +520,7 @@ export default function Page() {
       <footer className="mt-14 bg-[#312e81] text-[#c9c6e8]">
         <div className="mx-auto max-w-4xl px-5 pb-12 pt-8 text-[9px] sm:text-[9.5px] leading-[1.65]">
           <p>
-            This website is an advertisement operated by ClearLane Media, LLC,
+            This website is an advertisement operated by PennyPerMiles,
             an independent marketing company. We are not an insurance company,
             agent, or broker, and we do not provide insurance quotes, set rates,
             or make coverage decisions. By continuing, you will be directed to
@@ -530,7 +530,7 @@ export default function Page() {
           </p>
 
           <p className="mt-3">
-            ClearLane is an independent marketing website, not an insurance
+            PennyPerMiles is an independent marketing website, not an insurance
             company, agent or broker. We connect you with a third-party
             comparison service where you can view quotes. We may be paid when
             you continue to that service. This never costs you anything extra,
@@ -564,7 +564,7 @@ export default function Page() {
           </div>
 
           <p className="mt-4 text-[#a3a0c4]">
-            © 2026 ClearLane Media, LLC · [Street Address], [City], [State] [ZIP]
+            © 2026 PennyPerMiles · All rights reserved.
           </p>
 
           <p className="mt-20 text-center text-[8px] text-[#a3a0c4]">
