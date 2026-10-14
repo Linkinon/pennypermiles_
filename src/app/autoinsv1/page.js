@@ -40,19 +40,17 @@ const ShieldIcon = ({ className = "h-5 w-5" }) => (
 );
 
 const LockIcon = ({ className = "h-3.5 w-3.5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
     <rect
       x="6.5"
       y="10"
       width="11"
       height="8.5"
       rx="2"
-      stroke="currentColor"
       strokeWidth="1.8"
     />
     <path
       d="M9 10V7.8a3 3 0 0 1 6 0V10"
-      stroke="currentColor"
       strokeWidth="1.8"
       strokeLinecap="round"
     />
@@ -60,14 +58,13 @@ const LockIcon = ({ className = "h-3.5 w-3.5" }) => (
 );
 
 const BundleIcon = () => (
-  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
     <rect
       x="5"
       y="9"
       width="6"
       height="9"
       rx="1.5"
-      stroke="currentColor"
       strokeWidth="1.8"
     />
     <rect
@@ -76,12 +73,10 @@ const BundleIcon = () => (
       width="6"
       height="13"
       rx="1.5"
-      stroke="currentColor"
       strokeWidth="1.8"
     />
     <path
       d="M7.5 9V6.8A1.8 1.8 0 0 1 9.3 5H13"
-      stroke="currentColor"
       strokeWidth="1.8"
       strokeLinecap="round"
     />
@@ -89,48 +84,42 @@ const BundleIcon = () => (
 );
 
 const CarsIcon = () => (
-  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
     <path
       d="m3.5 15 1.4-4.2A2 2 0 0 1 6.8 9.5h3.8a2 2 0 0 1 1.9 1.3L14 15"
-      stroke="currentColor"
       strokeWidth="1.7"
       strokeLinecap="round"
     />
     <path
       d="M3 15h11v3H3z"
-      stroke="currentColor"
       strokeWidth="1.7"
     />
     <circle cx="5.5" cy="18" r="1.1" fill="currentColor" />
     <circle cx="11.5" cy="18" r="1.1" fill="currentColor" />
     <path
       d="m13.5 12.5.8-2.3a1.6 1.6 0 0 1 1.5-1.1h2.8a1.6 1.6 0 0 1 1.5 1.1l.9 2.8"
-      stroke="currentColor"
       strokeWidth="1.5"
       strokeLinecap="round"
     />
     <path
       d="M15.2 13h5.6v2.7h-5.1"
-      stroke="currentColor"
       strokeWidth="1.5"
     />
   </svg>
 );
 
 const CardIcon = () => (
-  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
     <rect
       x="4"
       y="6"
       width="16"
       height="12"
       rx="2"
-      stroke="currentColor"
       strokeWidth="1.8"
     />
     <path
       d="M4 10h16M8 14h4"
-      stroke="currentColor"
       strokeWidth="1.8"
       strokeLinecap="round"
     />
@@ -138,17 +127,15 @@ const CardIcon = () => (
 );
 
 const ClockIcon = () => (
-  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
     <circle
       cx="12"
       cy="12"
       r="8"
-      stroke="currentColor"
       strokeWidth="1.8"
     />
     <path
       d="M12 8v4.3l2.8 1.7"
-      stroke="currentColor"
       strokeWidth="1.8"
       strokeLinecap="round"
     />
@@ -180,6 +167,7 @@ const faqs = [
 
 export default function Page() {
   const [openFaq, setOpenFaq] = useState(null);
+  const [answer, setAnswer] = useState(null);
 
   const scrollToQuote = () => {
     document.getElementById("quote-card")?.scrollIntoView({
@@ -188,35 +176,43 @@ export default function Page() {
     });
   };
 
+  const handleAnswer = (choice) => {
+    setAnswer(choice);
+  };
+
   return (
-    <main className="min-h-screen bg-[#f6f5ff] font-sans text-[#2f2b68]">
-      <header className="h-[54px] bg-[#37348e] text-white">
+    <main className="min-h-screen bg-[#f6f5ff] font-sans text-[#2f2b68] pb-[68px]">
+      {/* Top Header */}
+      <header className="h-[52px] w-full bg-[#312e81] text-white">
         <div className="mx-auto flex h-full max-w-4xl items-center justify-between px-5">
-          <div className="flex items-center gap-2 text-[14px] font-bold">
+          <div className="flex items-center gap-2 text-[14px] font-bold tracking-tight">
             <span className="text-[#8b57ff]">
               <ShieldIcon />
             </span>
             <span>ClearLane</span>
           </div>
 
-          <div className="flex items-center gap-1.5 text-[10px] font-semibold text-[#e8e6ff]">
-            <LockIcon />
+          <div className="flex items-center gap-1.5 text-[10.5px] font-medium text-[#d0cef4]">
+            <LockIcon className="h-3.5 w-3.5" />
             <span>Secure SSL connection</span>
           </div>
         </div>
       </header>
 
+      {/* Main Content Area */}
       <section className="relative overflow-hidden">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[255px] w-[350px] -translate-x-1/2 rounded-b-[48%] bg-[#ebe7ff]" />
-        <div className="pointer-events-none absolute left-1/2 top-[28px] h-[190px] w-[265px] -translate-x-1/2 rounded-full bg-[#e1dbff]/80" />
+        {/* Soft Lavender Background Arch / Dome */}
+        <div className="pointer-events-none absolute left-1/2 top-0 h-[265px] w-[370px] -translate-x-1/2 rounded-b-[48%] bg-[#ebe7ff]" />
+        <div className="pointer-events-none absolute left-1/2 top-[28px] h-[195px] w-[275px] -translate-x-1/2 rounded-full bg-[#e1dbff]/80" />
 
-        <div className="relative mx-auto max-w-4xl px-5 pb-14 pt-10">
+        <div className="relative mx-auto max-w-4xl px-5 pb-16 pt-9">
+          {/* Hero Section */}
           <section className="mx-auto max-w-[620px] text-center">
-            <div className="mx-auto mb-4 inline-flex rounded-full bg-white/80 px-4 py-2 text-[10px] font-semibold text-[#7556e8] shadow-sm">
+            <div className="mx-auto mb-4 inline-flex items-center rounded-full bg-white/85 px-4 py-1.5 text-[10.5px] font-semibold text-[#704be6] shadow-xs border border-[#e5e0fb]/60">
               Compare auto insurance quotes in about 2 minutes
             </div>
 
-            <h1 className="text-[38px] font-extrabold leading-[1.05] tracking-[-0.9px] text-[#363394] sm:text-[46px]">
+            <h1 className="text-[34px] font-extrabold leading-[1.08] tracking-[-0.8px] text-[#312e81] sm:text-[44px]">
               Compare Auto Insurance
               <br />
               Quotes &amp; Discover How You
@@ -224,7 +220,7 @@ export default function Page() {
               Could Save
             </h1>
 
-            <p className="mx-auto mt-5 max-w-[470px] text-[13px] leading-5 text-[#77738e]">
+            <p className="mx-auto mt-4 max-w-[480px] text-[12.5px] leading-5 text-[#747190] sm:text-[13px]">
               Answer a few quick questions, then compare auto insurance
               <br className="hidden sm:block" />
               quotes from multiple providers in your area. No obligation to
@@ -233,39 +229,40 @@ export default function Page() {
             </p>
           </section>
 
-          <section className="mx-auto mt-7 max-w-[500px]">
-            <div className="rounded-[14px] border border-[#e9e7f7] bg-white px-7 pb-4 pt-6 shadow-[0_12px_30px_rgba(50,45,120,0.08)]">
-              <div className="grid grid-cols-[1fr_185px] items-center gap-4 max-[520px]:grid-cols-[1fr_125px] max-[520px]:gap-2">
+          {/* As Low As $39/month* Card */}
+          <section className="mx-auto mt-7 max-w-[490px]">
+            <div className="rounded-[16px] border border-[#e8e6f5] bg-white px-7 pb-4 pt-6 shadow-[0_10px_28px_rgba(49,46,129,0.06)]">
+              <div className="grid grid-cols-[1fr_205px] items-center gap-4 max-[480px]:grid-cols-[1fr_140px] max-[480px]:gap-2">
                 <div>
-                  <div className="text-[26px] font-extrabold leading-none text-[#777] max-[520px]:text-[21px]">
+                  <div className="text-[24px] font-extrabold leading-none text-[#737380] sm:text-[27px]">
                     As Low As
                   </div>
 
-                  <div className="mt-2 text-[31px] font-extrabold leading-none tracking-[-1px] text-[#1e66d3] max-[520px]:text-[24px]">
+                  <div className="mt-2 text-[28px] font-extrabold leading-none tracking-tight text-[#1d64d8] sm:text-[33px]">
                     $39/month*
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-end">
                   <img
-                    src="/car.jpg"
+                    src="/blue-car.png"
                     alt="Blue car"
-                    className="h-auto w-[185px] object-contain max-[520px]:w-[125px]"
+                    className="h-auto w-[205px] object-contain max-[480px]:w-[140px]"
                   />
                 </div>
               </div>
 
-              <p className="mt-1 text-center text-[7px] leading-3 text-[#a4a1af]">
-                *Rates vary by driver, vehicle, location &amp; coverage. See
-                terms below. Example promotional rate.
+              <p className="mt-2 text-center text-[7.5px] leading-3 text-[#a09cb0]">
+                *Rates vary by driver, vehicle, location, coverage selected, and provider. Actual rates may vary.
               </p>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[10px] font-semibold text-[#4e4965]">
+            {/* Trust checkmarks under car card */}
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[10.5px] sm:text-[11px] font-semibold text-[#484464]">
               {["No obligation", "Multiple providers", "No sign-up required"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-1.5">
-                    <span className="text-[#18ad58]">
+                    <span className="text-[#16b85a]">
                       <CheckIcon className="h-[15px] w-[15px]" />
                     </span>
                     <span>{item}</span>
@@ -275,54 +272,92 @@ export default function Page() {
             </div>
           </section>
 
+          {/* Yes / No Question Card */}
           <section
             id="quote-card"
-            className="mx-auto mt-10 max-w-[520px] rounded-[18px] border border-[#e7e5f6] bg-white px-6 py-6 shadow-[0_12px_30px_rgba(50,45,120,0.08)] max-[520px]:px-4"
+            className="mx-auto mt-8 max-w-[500px] rounded-[16px] border border-[#e8e6f5] bg-white px-6 py-6 shadow-[0_10px_28px_rgba(49,46,129,0.07)]"
           >
-            <h2 className="text-center text-[13px] font-bold text-[#51488b]">
+            <h2 className="text-center text-[13.5px] sm:text-[14px] font-bold text-[#443e75]">
               Want to see how much you could save?
             </h2>
 
-            <div className="mt-4 grid grid-cols-2 gap-4 max-[390px]:grid-cols-1 max-[520px]:gap-3">
-              <button className="flex h-[54px] items-center justify-center gap-3 rounded-[9px] border-0 bg-[#10ad4f] text-[14px] font-bold text-white shadow-sm transition hover:-translate-y-[1px] hover:brightness-95">
-                <span className="text-[22px]">😄</span>
+            <div className="mt-4 grid grid-cols-2 gap-3.5">
+              <button
+                type="button"
+                onClick={() => handleAnswer("yes")}
+                className={`flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#16a34a] hover:bg-[#15803d] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
+                  answer === "yes" ? "ring-2 ring-[#15803d] ring-offset-2" : ""
+                }`}
+              >
+                <span className="text-[20px] leading-none">😄</span>
                 <span>Yes</span>
               </button>
 
-              <button className="flex h-[54px] items-center justify-center gap-3 rounded-[9px] border-0 bg-[#ef2026] text-[14px] font-bold text-white shadow-sm transition hover:-translate-y-[1px] hover:brightness-95">
-                <span className="text-[22px]">😳</span>
+              <button
+                type="button"
+                onClick={() => handleAnswer("no")}
+                className={`flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#dc2626] hover:bg-[#b91c1c] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
+                  answer === "no" ? "ring-2 ring-[#b91c1c] ring-offset-2" : ""
+                }`}
+              >
+                <span className="text-[20px] leading-none">😳</span>
                 <span>No</span>
               </button>
             </div>
 
-            <div className="mt-4 border-t border-[#efedf7] pt-3">
-              <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[9px] font-medium text-[#68647d]">
-                {[
-                  "SSL secured",
-                  "No obligation",
-                  "No payment asked here",
-                  "Multiple providers",
-                  "No sign-up required",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-1">
-                    <span className="text-[#15ae58]">
-                      <CheckIcon className="h-[11px] w-[11px]" />
-                    </span>
-                    <span>{item}</span>
-                  </div>
-                ))}
+            {answer && (
+              <p className="mt-3 text-center text-[11px] font-medium text-[#443e75]">
+                {answer === "yes"
+                  ? "Great! Explore your personalized quotes below."
+                  : "No problem. You can still compare and explore rates anytime."}
+              </p>
+            )}
+
+            <div className="mt-4 border-t border-[#f0eefa] pt-3">
+              <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-[9.5px] sm:text-[10px] font-medium text-[#65617c]">
+                <div className="flex items-center gap-1">
+                  <span className="text-[#16b85a]">
+                    <CheckIcon className="h-3 w-3" />
+                  </span>
+                  <span>SSL secured</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-[#16b85a]">
+                    <CheckIcon className="h-3 w-3" />
+                  </span>
+                  <span>No obligation</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-[#16b85a]">
+                    <CheckIcon className="h-3 w-3" />
+                  </span>
+                  <span>No payment asked here</span>
+                </div>
+              </div>
+              <div className="mt-1 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-[9.5px] sm:text-[10px] font-medium text-[#65617c]">
+                <div className="flex items-center gap-1">
+                  <span className="text-[#16b85a]">
+                    <CheckIcon className="h-3 w-3" />
+                  </span>
+                  <span>Multiple providers</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-[#16b85a]">
+                    <CheckIcon className="h-3 w-3" />
+                  </span>
+                  <span>No sign-up required</span>
+                </div>
               </div>
             </div>
           </section>
 
-          <section className="mt-10">
-            <h2 className="text-center text-[24px] font-bold text-[#3d398e] max-[520px]:text-[22px]">
+          {/* How It Works Section */}
+          <section className="mt-12 text-center">
+            <h2 className="text-[23px] sm:text-[25px] font-bold text-[#312e81]">
               How it works
             </h2>
 
-            <div className="relative mt-5 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4">
-              <div className="pointer-events-none absolute left-[17%] right-[17%] top-[14px] hidden h-px bg-[#e0ddf4] sm:block" />
-
+            <div className="mx-auto mt-6 grid max-w-[560px] grid-cols-3 gap-3 text-center">
               {[
                 {
                   n: "1",
@@ -340,16 +375,16 @@ export default function Page() {
                   text: "Or keep your current policy.",
                 },
               ].map((step) => (
-                <div key={step.n} className="relative text-center">
-                  <div className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#7b35f2] text-[11px] font-bold text-white">
+                <div key={step.n} className="flex flex-col items-center px-1 text-center">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#7b35f2] text-[11px] font-bold text-white shadow-xs">
                     {step.n}
                   </div>
 
-                  <h3 className="mt-3 text-[11px] font-bold text-[#3c385d]">
+                  <h3 className="mt-2.5 text-[11px] sm:text-[12px] font-bold text-[#35325b] leading-tight">
                     {step.title}
                   </h3>
 
-                  <p className="mt-1 text-[10px] text-[#838097]">
+                  <p className="mt-1 text-[9.5px] sm:text-[10px] text-[#7d7997] leading-normal">
                     {step.text}
                   </p>
                 </div>
@@ -357,70 +392,72 @@ export default function Page() {
             </div>
           </section>
 
-          <section className="mt-14">
-            <h2 className="text-center text-[24px] font-bold text-[#3d398e] max-[520px]:text-[22px]">
+          {/* Discounts Section */}
+          <section className="mt-14 text-center">
+            <h2 className="text-[23px] sm:text-[25px] font-bold text-[#312e81]">
               Discounts you could explore
             </h2>
 
-            <p className="mt-2 text-center text-[11px] text-[#848094]">
+            <p className="mt-1.5 text-[11px] sm:text-[12px] text-[#7d7997]">
               Available discounts depend on the provider, your state and your
               situation.
             </p>
 
-            <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              <div className="flex h-[92px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white">
-                <div className="text-[#7c3cff]">
+            <div className="mx-auto mt-5 grid max-w-[620px] grid-cols-2 gap-3 sm:grid-cols-4">
+              <div className="flex h-[88px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white shadow-xs transition hover:shadow-sm">
+                <div className="text-[#8445ff]">
                   <BundleIcon />
                 </div>
-                <span className="mt-3 text-[10px] font-semibold text-[#37334e]">
+                <span className="mt-2.5 text-[11px] font-semibold text-[#37334e]">
                   Bundling
                 </span>
               </div>
 
-              <div className="flex h-[92px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white">
-                <div className="text-[#7c3cff]">
+              <div className="flex h-[88px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white shadow-xs transition hover:shadow-sm">
+                <div className="text-[#8445ff]">
                   <CarsIcon />
                 </div>
-                <span className="mt-3 text-[10px] font-semibold text-[#37334e]">
+                <span className="mt-2.5 text-[11px] font-semibold text-[#37334e]">
                   Multi-car
                 </span>
               </div>
 
-              <div className="flex h-[92px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white">
-                <div className="text-[#7c3cff]">
+              <div className="flex h-[88px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white shadow-xs transition hover:shadow-sm">
+                <div className="text-[#8445ff]">
                   <CardIcon />
                 </div>
-                <span className="mt-3 text-[10px] font-semibold text-[#37334e]">
+                <span className="mt-2.5 text-[11px] font-semibold text-[#37334e]">
                   Pay in full
                 </span>
               </div>
 
-              <div className="flex h-[92px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white">
-                <div className="text-[#7c3cff]">
+              <div className="flex h-[88px] flex-col items-center justify-center rounded-[12px] border border-[#eceaf8] bg-white shadow-xs transition hover:shadow-sm">
+                <div className="text-[#8445ff]">
                   <ClockIcon />
                 </div>
-                <span className="mt-3 text-[10px] font-semibold text-[#37334e]">
+                <span className="mt-2.5 text-[11px] font-semibold text-[#37334e]">
                   Safe driving
                 </span>
               </div>
             </div>
 
-            <p className="mt-4 text-center text-[9px] text-[#9490a4]">
+            <p className="mt-3.5 text-[9.5px] sm:text-[10px] text-[#8e8ba0]">
               You could qualify for discounts depending on your provider and
               situation.
             </p>
           </section>
 
-          <section className="mt-14">
-            <h2 className="text-center text-[24px] font-bold text-[#3d398e] max-[520px]:text-[22px]">
+          {/* Have These Handy Section */}
+          <section className="mt-14 text-center">
+            <h2 className="text-[23px] sm:text-[25px] font-bold text-[#312e81]">
               Have these handy
             </h2>
 
-            <p className="mt-2 text-center text-[11px] text-[#848094]">
+            <p className="mt-1.5 text-[11px] sm:text-[12px] text-[#7d7997]">
               A few details on hand can make comparing quotes faster.
             </p>
 
-            <div className="mx-auto mt-5 max-w-[520px] rounded-[13px] border border-[#e8e6f6] bg-white px-5 py-4">
+            <div className="mx-auto mt-5 max-w-[490px] rounded-[14px] border border-[#e8e6f6] bg-white px-6 py-4 shadow-xs text-left">
               {[
                 "Vehicle year, make and model",
                 "Basic driver details",
@@ -428,9 +465,9 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-2 py-1.5 text-[11px] font-medium text-[#514d68]"
+                  className="flex items-center gap-2.5 py-1.5 text-[11.5px] font-medium text-[#4b4764]"
                 >
-                  <span className="shrink-0 text-[#13b65b]">
+                  <span className="shrink-0 text-[#16b85a]">
                     <CheckIcon className="h-4 w-4" />
                   </span>
                   <span>{item}</span>
@@ -439,36 +476,37 @@ export default function Page() {
             </div>
           </section>
 
-          <section className="mx-auto mt-12 max-w-[700px]">
-            <h2 className="mb-3 text-center text-[24px] font-bold text-[#3d398e] max-[520px]:text-[22px]">
+          {/* Frequently Asked Questions */}
+          <section className="mx-auto mt-14 max-w-[620px]">
+            <h2 className="mb-4 text-center text-[23px] sm:text-[25px] font-bold text-[#312e81]">
               Frequently asked questions
             </h2>
 
-            <div className="space-y-2.5">
+            <div className="space-y-2">
               {faqs.map((faq, index) => {
                 const isOpen = openFaq === index;
 
                 return (
                   <div
                     key={faq.q}
-                    className="overflow-hidden rounded-xl border border-[#ebe9fb] bg-white"
+                    className="overflow-hidden rounded-[12px] border border-[#ebe9fb] bg-white shadow-xs"
                   >
                     <button
                       type="button"
                       onClick={() => setOpenFaq(isOpen ? null : index)}
-                      className="flex w-full items-center justify-between gap-4 bg-white px-5 py-4 text-left"
+                      className="flex w-full items-center justify-between gap-4 bg-white px-5 py-3.5 text-left cursor-pointer transition hover:bg-slate-50/50"
                     >
-                      <span className="text-[14px] font-semibold text-[#272251]">
+                      <span className="text-[13px] sm:text-[13.5px] font-semibold text-[#272251]">
                         {faq.q}
                       </span>
 
-                      <span className="text-xl font-medium text-[#7c3cff]">
+                      <span className="text-lg font-bold text-[#7c3cff]">
                         {isOpen ? "−" : "+"}
                       </span>
                     </button>
 
                     {isOpen && (
-                      <div className="border-t border-[#efedfa] px-5 pb-5 pt-4 text-[13px] leading-6 text-[#6b6783]">
+                      <div className="border-t border-[#f2f0fc] px-5 pb-4 pt-3 text-[12px] leading-relaxed text-[#6b6783]">
                         {faq.a}
                       </div>
                     )}
@@ -478,15 +516,16 @@ export default function Page() {
             </div>
           </section>
 
-          <section className="mx-auto mt-14 max-w-[700px] rounded-[20px] bg-gradient-to-r from-[#4933aa] to-[#7a31eb] px-6 py-8 text-center text-white max-[520px]:px-4">
-            <h2 className="text-[24px] font-bold max-[520px]:text-[22px]">
+          {/* Ready to Compare Quotes Banner */}
+          <section className="mx-auto mt-14 max-w-[620px] rounded-[20px] bg-gradient-to-r from-[#4d32bb] via-[#6332ce] to-[#7931ee] px-6 py-8 text-center text-white shadow-md">
+            <h2 className="text-[22px] sm:text-[24px] font-bold">
               Ready to compare quotes?
             </h2>
 
             <button
               type="button"
               onClick={scrollToQuote}
-              className="mt-4 min-w-[290px] rounded-[10px] border-0 bg-[#10ad4f] px-8 py-3.5 text-[13px] font-bold text-white transition hover:-translate-y-[1px] hover:brightness-95 max-[520px]:w-full max-[520px]:min-w-0"
+              className="mt-4 inline-flex min-w-[210px] items-center justify-center rounded-[9px] bg-[#16a34a] hover:bg-[#15803d] px-8 py-3 text-[13px] font-bold text-white shadow transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               Check Rates →
             </button>
@@ -494,8 +533,9 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="bg-[#37348e] text-[#d8d6f0]">
-        <div className="mx-auto max-w-4xl px-5 pb-12 pt-8 text-[9px] leading-[1.65]">
+      {/* Footer */}
+      <footer className="mt-14 bg-[#312e81] text-[#c9c6e8]">
+        <div className="mx-auto max-w-4xl px-5 pb-12 pt-8 text-[9px] sm:text-[9.5px] leading-[1.65]">
           <p>
             This website is an advertisement operated by ClearLane Media, LLC,
             an independent marketing company. We are not an insurance company,
@@ -526,30 +566,43 @@ export default function Page() {
             insurance providers; availability varies by provider and state.
           </p>
 
-          <div className="mt-4 flex flex-wrap gap-4">
-            <a href="#" className="underline underline-offset-2 hover:text-white">
+          <div className="mt-4 flex flex-wrap gap-4 text-white font-medium">
+            <a href="/privacy" className="underline underline-offset-2 hover:text-white/80">
               Privacy Policy
             </a>
 
-            <a href="#" className="underline underline-offset-2 hover:text-white">
+            <a href="/terms" className="underline underline-offset-2 hover:text-white/80">
               Terms of Use
             </a>
 
-            <a href="#" className="underline underline-offset-2 hover:text-white">
+            <a href="/disclosure" className="underline underline-offset-2 hover:text-white/80">
               Contact
             </a>
           </div>
 
-          <p className="mt-4">
+          <p className="mt-4 text-[#a3a0c4]">
             © 2026 ClearLane Media, LLC · [Street Address], [City], [State] [ZIP]
           </p>
 
-          <p className="mt-24 text-center text-[8px]">
+          <p className="mt-20 text-center text-[8px] text-[#a3a0c4]">
             Advertisement · Independent comparison website. Not an insurance
             company.
           </p>
         </div>
       </footer>
+
+      {/* Fixed Bottom Sticky Bar */}
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#e5e3f0] bg-white px-4 py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+        <div className="mx-auto max-w-4xl">
+          <button
+            type="button"
+            onClick={scrollToQuote}
+            className="flex h-[40px] w-full items-center justify-center rounded-[8px] bg-[#16a34a] hover:bg-[#15803d] text-[13px] font-bold text-white shadow-sm transition hover:brightness-105 active:translate-y-0.5 cursor-pointer"
+          >
+            Continue →
+          </button>
+        </div>
+      </div>
     </main>
   );
 }
