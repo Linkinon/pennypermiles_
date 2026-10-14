@@ -165,19 +165,16 @@ const faqs = [
   },
 ];
 
+const CLICK_URL = "https://h0mlr.ttrk.io/click";
+
 export default function Page() {
   const [openFaq, setOpenFaq] = useState(null);
-  const [answer, setAnswer] = useState(null);
 
   const scrollToQuote = () => {
     document.getElementById("quote-card")?.scrollIntoView({
       behavior: "smooth",
       block: "center",
     });
-  };
-
-  const handleAnswer = (choice) => {
-    setAnswer(choice);
   };
 
   return (
@@ -282,36 +279,22 @@ export default function Page() {
             </h2>
 
             <div className="mt-4 grid grid-cols-2 gap-3.5">
-              <button
-                type="button"
-                onClick={() => handleAnswer("yes")}
-                className={`flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#16a34a] hover:bg-[#15803d] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
-                  answer === "yes" ? "ring-2 ring-[#15803d] ring-offset-2" : ""
-                }`}
+              <a
+                href={CLICK_URL}
+                className="flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#16a34a] hover:bg-[#15803d] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
                 <span className="text-[20px] leading-none">😄</span>
                 <span>Yes</span>
-              </button>
+              </a>
 
-              <button
-                type="button"
-                onClick={() => handleAnswer("no")}
-                className={`flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#dc2626] hover:bg-[#b91c1c] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
-                  answer === "no" ? "ring-2 ring-[#b91c1c] ring-offset-2" : ""
-                }`}
+              <a
+                href={CLICK_URL}
+                className="flex h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#dc2626] hover:bg-[#b91c1c] text-[15px] font-bold text-white shadow-sm transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
                 <span className="text-[20px] leading-none">😳</span>
                 <span>No</span>
-              </button>
+              </a>
             </div>
-
-            {answer && (
-              <p className="mt-3 text-center text-[11px] font-medium text-[#443e75]">
-                {answer === "yes"
-                  ? "Great! Explore your personalized quotes below."
-                  : "No problem. You can still compare and explore rates anytime."}
-              </p>
-            )}
 
             <div className="mt-4 border-t border-[#f0eefa] pt-3">
               <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-[9.5px] sm:text-[10px] font-medium text-[#65617c]">
