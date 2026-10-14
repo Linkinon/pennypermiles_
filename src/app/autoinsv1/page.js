@@ -244,7 +244,7 @@ export default function Page() {
                   <img
                     src="/blue-car.png"
                     alt="Blue car"
-                    className="h-auto w-[205px] object-contain max-[480px]:w-[140px]"
+                    className="h-auto w-[205px] object-contain max-[480px]:w-[140px] scale-x-120"
                   />
                 </div>
               </div>
