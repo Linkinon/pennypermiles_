@@ -209,12 +209,12 @@ export default function Page() {
               Compare auto insurance quotes in about 2 minutes
             </div>
 
-            <h1 className="text-[34px] font-extrabold leading-[1.08] tracking-[-0.8px] text-[#312e81] sm:text-[44px]">
+            <h1 className="text-[34px] font-bold leading-[1.08] tracking-[-0.8px] text-[#312e81] sm:text-[44px]">
               Compare Auto Insurance
               <br />
-              Quotes &amp; Discover How You
+              Quotes &amp; Could Save Up To 
               <br />
-              Could Save
+              $694/Year
             </h1>
 
             <p className="mx-auto mt-4 max-w-[480px] text-[12.5px] leading-5 text-[#747190] sm:text-[13px]">
