@@ -1203,7 +1203,7 @@ export default function Page() {
                     Potential rate
                   </div>
 
-                  <div className="mt-3 text-[36px] font-extrabold leading-[1.08] tracking-[-0.04em] text-[#0d2b5e] sm:text-[52px]">
+                  <div className="mt-3 text-[30px] font-bold leading-[1.08] tracking-[-0.04em] text-[#0d2b5e] sm:text-[42px]">
                     Rates as low as
                     <br />
                     $39/month*
