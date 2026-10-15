@@ -505,13 +505,14 @@ export default function Page() {
               Ready to compare quotes?
             </h2>
 
-            <button
+            <a
               type="button"
-              onClick={scrollToQuote}
+              // onClick={scrollToQuote}
+               href={CLICK_URL}
               className="mt-4 inline-flex min-w-[210px] items-center justify-center rounded-[9px] bg-[#16a34a] hover:bg-[#15803d] px-8 py-3 text-[13px] font-bold text-white shadow transition hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               Check Rates →
-            </button>
+            </a>
           </section>
         </div>
       </section>
@@ -577,13 +578,14 @@ export default function Page() {
       {/* Fixed Bottom Sticky Bar */}
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#e5e3f0] bg-white px-4 py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
         <div className="mx-auto max-w-4xl">
-          <button
+          <a
             type="button"
-            onClick={scrollToQuote}
+             href={CLICK_URL}
+            // onClick={scrollToQuote}
             className="flex h-[40px] w-full items-center justify-center rounded-[8px] bg-[#16a34a] hover:bg-[#15803d] text-[13px] font-bold text-white shadow-sm transition hover:brightness-105 active:translate-y-0.5 cursor-pointer"
           >
             Continue →
-          </button>
+          </a>
         </div>
       </div>
     </main>
